@@ -7,8 +7,11 @@
 
 header {
     background-color: rgb(26, 49, 27);
-    padding: 20px;
     position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    padding: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -39,25 +42,106 @@ header a {
     padding: 20px;
 }
 
-.about {
+nav a:hover {
+    background-color: rgb(161, 180, 161);
+    color: black;
+    font-weight: bold;
+}
+
+#about {
     display: flex;
+    padding: 150px 20px 20px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+p {
     padding: 20px;
+    font-size: 20px;
 }
 
 .hero {
-    max-width: 40%;
+    max-width: 45%;
     height: auto;
     padding: 10px;
-    display: flex;
-    border: 1px white;
     box-shadow: 10px 10px 5px slategray;
+}
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:space-between;
+    padding: 20px;
+}
+
+.titleportfolio {
+    width: 100%;
+    padding: 20px;
+}
+
+.maincard {
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    width: 50%;
+    padding: 20px;
+}
+
+.maincard img {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+}
+
+.card img {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+}
+
+.maincard img:hover {
+    opacity: 50%;
+}
+
+.card img:hover {
+    opacity: 50%;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+#contact ul {
+    list-style-type: none;
+}
+
+#contact li {
+    display: inline;
+    font-size: 20px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
 
 footer {
     background-color: rgb(161, 180, 161);
     padding: 20px;
-    position: fixed;
     width: 100%;
     display: flex;
     justify-content: center;
