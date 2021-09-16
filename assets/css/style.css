@@ -49,6 +49,7 @@ nav a:hover {
 
 #about {
     display: flex;
+    flex-wrap: wrap;
     padding: 150px 20px 20px;
 }
 
@@ -66,8 +67,11 @@ p {
 }
 
 .hero {
-    width: 45%;
-    padding: 10px;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 10px 10px 5px slategray;
 }
 
@@ -114,28 +118,18 @@ p {
     opacity: 50%;
 }
 
+#contact {
+    padding: 20px;
+}
+
 footer {
     background-color: var(--accent-color);
-    padding: 20px;
+    height: 150px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-footer ul li {
-    display: inline;
-    padding: 40px;
 }
 
-img.email {
-    width: 70px;
-    height: auto;
-}
 
-footer h3:after {
-    content: ' \21AC';
-}
+
 
 @media  screen and (max-width: 768px) {
     header {
@@ -151,6 +145,111 @@ footer h3:after {
     }
 
     .hero {
-        align-content: center;
+        width: 50%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content:space-between;
+        padding: 20px;
+    }
+
+    .titleportfolio {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .maincard {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .card {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .maincard a img {
+        width: 70%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .card a img {
+        width: 70%;
+        height: auto;
+        padding: 10px;
+    }
+
+
+
 }
+
+@media  screen and (max-width: 540px) {
+    header {
+        display: block;
+        position: absolute;
+    }
+
+    header a {
+        font-size: 30px;
+        display: block;
+    }
+
+    #about {
+        padding: 400px 20px 20px;
+
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content:space-between;
+        padding: 20px;
+    }
+
+    .titleportfolio {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .maincard {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .card {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .maincard a img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .card a img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    
+
+    }
+
