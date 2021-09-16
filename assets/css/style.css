@@ -6,11 +6,12 @@
 }
 
 :root {
+    --head-color: rgb(26, 49, 27);
     --accent-color: rgb(189, 212, 189);
 }
 
 header {
-    background-color: rgb(26, 49, 27);
+    background-color: var(--head-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -143,6 +144,11 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding: 20px;
+    }
+
+    nav a:hover {
+        background-color: unset !important;
     }
 
     #about {
