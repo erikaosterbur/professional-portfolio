@@ -5,10 +5,13 @@
     margin: 0;
 }
 
+:root {
+    --accent-color: rgb(189, 212, 189);
+}
+
 header {
     background-color: rgb(26, 49, 27);
     position: fixed;
-    z-index: 20;
     top: 0;
     left: 0;
     padding: 20px;
@@ -26,10 +29,6 @@ header h1 {
     font-weight: 400px;
     text-shadow: 4px 2px black;
 }
-
-nav ul {
-    list-style-type: none;
-  }
   
 nav ul li {
     display: inline;
@@ -43,7 +42,7 @@ header a {
 }
 
 nav a:hover {
-    background-color: rgb(161, 180, 161);
+    background-color: var(--accent-color);
     color: black;
     font-weight: bold;
 }
@@ -67,8 +66,7 @@ p {
 }
 
 .hero {
-    max-width: 45%;
-    height: auto;
+    width: 45%;
     padding: 10px;
     box-shadow: 10px 10px 5px slategray;
 }
@@ -96,13 +94,13 @@ p {
     padding: 20px;
 }
 
-.maincard img {
+.maincard a img {
     width: 70%;
     height: auto;
     padding: 10px;
 }
 
-.card img {
+.card a img {
     width: 70%;
     height: auto;
     padding: 10px;
@@ -116,44 +114,43 @@ p {
     opacity: 50%;
 }
 
-#contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 20px;
-}
-
-#contact ul {
-    list-style-type: none;
-}
-
-#contact li {
-    display: inline;
-    font-size: 20px;
-}
-
-#contact a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-
-
 footer {
-    background-color: rgb(161, 180, 161);
+    background-color: var(--accent-color);
     padding: 20px;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
   }
 
-footer a {
-    text-decoration: none;
-    font-size: 30px;
-    color: rgb(174, 177, 174);
-    padding: 20px;
-}
-
 footer ul li {
     display: inline;
+    padding: 40px;
+}
+
+img.email {
+    width: 70px;
+    height: auto;
+}
+
+footer h3:after {
+    content: ' \21AC';
+}
+
+@media  screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        align-content: center;
+    }
 }
